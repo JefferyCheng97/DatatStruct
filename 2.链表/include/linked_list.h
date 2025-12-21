@@ -4,7 +4,7 @@
 // 定义元素类型
 using eleType = int;
 
-// 定义链接结构体节点
+// 定义链接结构体节点, 头插法
 struct ListNode
 {
     eleType data;
