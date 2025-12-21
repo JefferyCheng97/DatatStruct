@@ -1,11 +1,15 @@
-cmake_minimum_required(VERSION 3.13)
+# 生成可执行文件
+add_executable(SequentialList
+    src/main.cpp
+    src/delete.cpp
+    src/insert.cpp
+    src/update.cpp
+    src/find.cpp
+    src/init.cpp
+)
 
-# 项目名称
-project(SequentialList LANGUAGES CXX)
+# 包含头文件目录
+target_include_directories(SequentialList
+    PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
 
-# 设置 C++ 标准
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
-# 把 src 目录作为子目录加入
-add_subdirectory(src)
