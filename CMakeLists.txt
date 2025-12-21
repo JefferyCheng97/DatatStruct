@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.13)
+project(DataStruct CXX)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+add_subdirectory("1.顺序表")
+add_subdirectory("2.链表")
+add_subdirectory("3.栈/链表版本")
+add_subdirectory("3.栈/顺序表版本")
